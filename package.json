@@ -9,6 +9,7 @@
   },
   "scripts": {
     "start": "npm-run-all -p watch-css watch-js",
+    "build": "npm-run-all -p build-css build-js",
     "build-js": "webpack",
     "watch-js": "webpack --watch",
     "build-css": "node-sass-chokidar ./src -o ./src",
